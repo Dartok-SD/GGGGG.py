@@ -65,6 +65,7 @@ G_Punct2Morse = ['?', '?']
 G_Punct3Morse = ['"' , '"']
 G_Punct4Morse = ["'" , "'"]
 G_Punct5Morse = ['_','_']
+G_Punct6Morse = ['.','.']
 
 
 #List of all the variables
