@@ -1,3 +1,4 @@
+#This program was written by David Sun
 #/r/ggggg is a subreddit consisting of only G's
 #Supposedly, it's written all in morse code using uppercase and lowercase G's
 #This program will be able to take the text and output a correct answer
@@ -58,6 +59,13 @@ G_0Morse = ['GGGGG','0']
 #Error Exception
 G_Error1Morse = ['/',' ']
 G_Error2Morse = ['', '']
+#Punctuation Exception
+G_Punct1Morse = ['!', '!']
+G_Punct2Morse = ['?', '?']
+G_Punct3Morse = ['"' , '"']
+G_Punct4Morse = ["'" , "'"]
+G_Punct5Morse = ['_','_']
+
 
 #List of all the variables
 #Nested List
@@ -66,7 +74,8 @@ GList =[G_AMorse, G_BMorse, G_CMorse, G_DMorse, G_EMorse, G_FMorse, G_GMorse,
        G_OMorse, G_PMorse, G_QMorse, G_RMorse, G_SMorse, G_TMorse, G_UMorse,
        G_VMorse, G_WMorse, G_XMorse, G_YMorse, G_ZMorse, G_1Morse, G_2Morse,
        G_3Morse, G_4Morse, G_5Morse, G_6Morse, G_7Morse, G_8Morse, G_9Morse,
-       G_0Morse, G_Error1Morse, G_Error2Morse]
+       G_0Morse, G_Error1Morse, G_Error2Morse, G_Punct1Morse, G_Punct2Morse,
+       G_Punct3Morse, G_Punct4Morse, G_Punct5Morse]
 
 #String Testing
 #x = 'some string'
@@ -101,12 +110,14 @@ def GTesting():
 #Finds the character when morse code is inputted
 def GCharFind(strInput):
     for x in range(len(GList)):
-        for i in range (0,1):
+        #This is not needed
+        #for i in range (0,1):
             #since this was done with a string, theres an issue here
-            if (GList[x][i] == strInput):
-                return(GList[x][1])
-            elif (strInput == ' '):
-                return ' '
+        if (GList[x][0] == strInput):
+            return(GList[x][1])
+        #Unsure if this is needed, but I don't believe so
+        elif (strInput == ' '):
+            return ' '
     return ' Invalid Letter '
 
 #Find the Morse Code when character is inputted
@@ -115,12 +126,13 @@ def GCharFind(strInput):
 def CharToGFind(charInput):
     for x in range(len(GList)):
         #this is technically redundant
-        for i in range (1,2):
-            if (GList[x][i].lower() == charInput.lower() ):
-                return(GList[x][0])
-            elif (charInput == ' '):
-                #return ' '
-                pass
+        #This is also not needed
+        #for i in range (1,2):
+        if (GList[x][i].lower() == charInput.lower() ):
+            return(GList[x][0])
+        elif (charInput == ' '):
+            #return ' '
+            pass
             #This doesn't actually catch the error
             #elif (charInput == ' /'):
                 #return ' '
