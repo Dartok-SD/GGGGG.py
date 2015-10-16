@@ -76,7 +76,7 @@ GList =[G_AMorse, G_BMorse, G_CMorse, G_DMorse, G_EMorse, G_FMorse, G_GMorse,
        G_VMorse, G_WMorse, G_XMorse, G_YMorse, G_ZMorse, G_1Morse, G_2Morse,
        G_3Morse, G_4Morse, G_5Morse, G_6Morse, G_7Morse, G_8Morse, G_9Morse,
        G_0Morse, G_Error1Morse, G_Error2Morse, G_Punct1Morse, G_Punct2Morse,
-       G_Punct3Morse, G_Punct4Morse, G_Punct5Morse]
+       G_Punct3Morse, G_Punct4Morse, G_Punct5Morse, G_Punct6Morse]
 
 #String Testing
 #x = 'some string'
@@ -129,7 +129,7 @@ def CharToGFind(charInput):
         #this is technically redundant
         #This is also not needed
         #for i in range (1,2):
-        if (GList[x][i].lower() == charInput.lower() ):
+        if (GList[x][1].lower() == charInput.lower() ):
             return(GList[x][0])
         elif (charInput == ' '):
             #return ' '
@@ -137,6 +137,8 @@ def CharToGFind(charInput):
             #This doesn't actually catch the error
             #elif (charInput == ' /'):
                 #return ' '
+        #elif (charInput == '.'):
+            #return '.'
     return ' Invalid Input '
 
 #Main Clases
@@ -146,7 +148,7 @@ def MainGtoLetters():
     gStrInput = input('Enter a G Morse Code: ')
     #Actually this variable below is a list
     newSplitString = re.split(u'\s|\u200b',gStrInput)
-    #print (newSplitString)
+    print (newSplitString)
     #ouput testing
     #print(gStrInput)
     #print(gStrInput[0])
