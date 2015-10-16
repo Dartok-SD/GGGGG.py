@@ -5,7 +5,7 @@
 
 #Edit - This program can now convert things into G's too
 
-#Errors - Random invalid inputs at a long conversions of g's -> letters
+#FIXED: Errors - Random invalid inputs at a long conversions of g's -> letters
 
 
 #Objective: Create a list of morse Code using G's and g's
