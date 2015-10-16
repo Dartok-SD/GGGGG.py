@@ -148,7 +148,7 @@ def MainGtoLetters():
     gStrInput = input('Enter a G Morse Code: ')
     #Actually this variable below is a list
     newSplitString = re.split(u'\s|\u200b',gStrInput)
-    print (newSplitString)
+    #print (newSplitString)
     #ouput testing
     #print(gStrInput)
     #print(gStrInput[0])
