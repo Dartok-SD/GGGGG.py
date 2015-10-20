@@ -66,6 +66,32 @@ G_Punct3Morse = ['"' , '"']
 G_Punct4Morse = ["'" , "'"]
 G_Punct5Morse = ['_','_']
 G_Punct6Morse = ['.','.']
+G_Punct7Morse = ['@','@']
+G_Punct8Morse = ['#','#']
+G_Punct9Morse = ['@','@']
+G_Punct10Morse = ['%','%']
+G_Punct11Morse = ['$','$']
+G_Punct12Morse = ['^','^']
+G_Punct13Morse = ['&','&']
+G_Punct14Morse = ['*','*']
+G_Punct15Morse = ['(','(']
+G_Punct16Morse = [')',')']
+G_Punct17Morse = ['-','-']
+G_Punct18Morse = ['=','=']
+G_Punct19Morse = ['+','+']
+G_Punct20Morse = ['[','[']
+G_Punct21Morse = [']',']']
+G_Punct22Morse = [':',':']
+G_Punct23Morse = [';',';']
+G_Punct24Morse = ['{','{']
+G_Punct25Morse = ['}','}']
+G_Punct26Morse = ['<','<']
+G_Punct27Morse = ['>','>']
+G_Punct28Morse = ['~','~']
+G_Punct29Morse = ['`','`']
+G_Punct30Morse = ['|','|']
+G_Punct31Morse = [',',',']
+
 
 
 #List of all the variables
@@ -76,7 +102,12 @@ GList =[G_AMorse, G_BMorse, G_CMorse, G_DMorse, G_EMorse, G_FMorse, G_GMorse,
        G_VMorse, G_WMorse, G_XMorse, G_YMorse, G_ZMorse, G_1Morse, G_2Morse,
        G_3Morse, G_4Morse, G_5Morse, G_6Morse, G_7Morse, G_8Morse, G_9Morse,
        G_0Morse, G_Error1Morse, G_Error2Morse, G_Punct1Morse, G_Punct2Morse,
-       G_Punct3Morse, G_Punct4Morse, G_Punct5Morse, G_Punct6Morse]
+       G_Punct3Morse, G_Punct4Morse, G_Punct5Morse, G_Punct6Morse, G_Punct7Morse,
+       G_Punct8Morse, G_Punct9Morse, G_Punct10Morse, G_Punct11Morse, G_Punct12Morse,
+       G_Punct13Morse, G_Punct14Morse, G_Punct15Morse, G_Punct16Morse, G_Punct17Morse,
+       G_Punct18Morse, G_Punct19Morse, G_Punct20Morse, G_Punct21Morse, G_Punct22Morse,
+       G_Punct23Morse, G_Punct24Morse, G_Punct25Morse, G_Punct26Morse, G_Punct27Morse,
+       G_Punct28Morse, G_Punct29Morse, G_Punct30Morse, G_Punct31Morse]
 
 #String Testing
 #x = 'some string'
